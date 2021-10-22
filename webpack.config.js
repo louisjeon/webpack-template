@@ -2,8 +2,7 @@ const path = require("path");
 const HtmlPlugin = require("html-webpack-plugin"); // 생성자함수이므로 파스칼케이스
 const CopyPlugin = require("copy-webpack-plugin");
 
-module.exports = (env, options) => {
-  console.log(env, options);
+module.exports = () => {
   return {
     resolve: {
       extensions: [".js"],
